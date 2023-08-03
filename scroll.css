@@ -1,0 +1,170 @@
+.box{
+    
+    width: 200px;
+    height: 40px;
+    border: 2px solid gray;
+    border-radius: 5px ;
+    background-color: rgb(8, 203, 203);
+    display: flex;
+    align-items: center;
+    padding:5px;
+    position: fixed;
+    right: -141px;
+    top:20%;
+    transition-duration: 0.5s;
+
+}
+
+.box img{
+    width: 50px;
+    height: 30px;
+    background-color: none;
+    padding-left: 5px;
+}
+.box a{
+    text-decoration: none;
+    color:black;
+    padding-left: 20px;
+}
+.box:hover
+{
+    right:0;
+    transition-duration: 1s;
+
+}
+.box2{
+    
+    width: 200px;
+    height: 40px;
+    border: 2px solid gray;
+    border-radius: 5px ;
+    background-color: rgb(8, 203, 203);
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    position: fixed;
+    right: -141px;
+    top:27%;
+    transition-duration: 0.5s;
+
+}
+
+.box2 img{
+    width: 50px;
+    height: 40px;
+    background-color: none;
+    padding-left: 5px;
+}
+.box2 a{
+    text-decoration: none;
+    color:black;
+    padding-left: 20px;
+}
+.box2:hover
+{
+    right:0;
+    transition-duration: 1s;
+
+}
+.box3{
+    
+    width: 200px;
+    height: 40px;
+    border: 2px solid gray;
+    border-radius: 5px ;
+    background-color: rgb(8, 203, 203);
+    display: flex;
+    align-items: center;
+    padding:5px;
+    position: fixed;
+    right: -141px;
+    top:34%;
+    transition-duration: 0.5s;
+
+}
+
+.box3 img{
+    width: 50px;
+    height: 30px;
+    background-color: none;
+    padding-left: 5px;
+}
+.box3 a{
+    text-decoration: none;
+    color:black;
+    padding-left: 20px;
+}
+.box3:hover
+{
+    right:0;
+    transition-duration: 1s;
+
+}
+.box4{
+    
+    width: 200px;
+    height: 40px;
+    border: 2px solid gray;
+    border-radius: 5px ;
+    background-color: rgb(8, 203, 203);
+    display: flex;
+    align-items: center;
+    padding:5px;
+    position: fixed;
+    right: -141px;
+    top:41%;
+    transition-duration: 0.5s;
+
+}
+
+.box4 img{
+    width: 50px;
+    height: 30px;
+    background-color: none;
+    padding-left: 5px;
+}
+.box4 a{
+    text-decoration: none;
+    color:black;
+    padding-left: 20px;
+}
+.box4:hover
+{
+    right:0;
+    transition-duration: 1s;
+
+}
+.box5{
+    
+    width: 200px;
+    height: 40px;
+    border: 2px solid gray;
+    border-radius: 5px ;
+    background-color: rgb(8, 203, 203);
+    display: flex;
+    align-items: center;
+    padding:5px;
+    position: fixed;
+    right: -141px;
+    top:48%;
+    transition-duration: 0.5s;
+
+}
+
+.box5 img{
+    width: 50px;
+    height: 30px;
+    background-color: none;
+   padding-top: 5px;
+}
+.box5 a{
+    text-decoration: none;
+    color:black;
+    padding-left: 20px;
+}
+.box5:hover
+{
+    right:0;
+    transition-duration: 1s;
+
+}

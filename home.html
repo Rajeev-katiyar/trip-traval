@@ -1,0 +1,383 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <!-- start of the header section -->
+    <header>
+        <section class="navbar">
+          <div class="header1">
+            <div class="logo1">
+              <img src="img/logoeb.jpg" alt="Logo">
+            </div>
+            <div class="logo">
+              <h1>Engineer<span>bhaiya</span></h1>
+            </div>
+            <ul>
+              <li class="{% if request.path == 'home' %}active{% endif %}"><a href="home.html">Home</a></li>
+              <li class="{% if request.path == 'aboutus/' %}active{% endif %}"><a href="about-us.html">About</a></li>
+              <li>
+                <a href="#">Services <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown">
+                  <ul>
+                    <li><a href="{% url 'hotel' %}">Hotel</a></li>
+                    <li><a href="{% url 'restaurant' %}">Restaurant</a></li>
+                    <li><a href="{% url 'travel' %}">Travel</a></li>
+                    <li><a href="{% url 'guides' %}">Guides</a></li>
+                    <li><a href="{% url 'service' %}">Service</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="{% if request.path == 'contact/' %}active{% endif %}"><a href="contact.html">Contact us</a></li>
+            </ul>
+            <button class="btn1"><a href="login.html">Login</a></button>
+            <button class="btn1"><a href="signup.html">SignUp</a></button>
+          </div>
+        </section>
+      </header>
+      <!-- end of the header section -->
+      <!-- start of the slider section -->
+      <div class="container">
+        <section>
+            <div class="box1">
+                <img src="img/13.jpg" alt="Adventure Image">
+                <h1>ADVENTURE</h1>
+                <h1 class="h11">TREKKING</h1>
+                <p>
+                    “If you think adventure is dangerous, try routine, it’s lethal.”<br>
+                    “Everyone wants to live on top of the mountain, but all the happiness and growth occurs while you are climbing”
+                </p>
+            </div>
+            <div class="box2">
+                <img src="img/nature.jpg" alt="Nature Image">
+                <h1>EXPLORE</h1>
+                <h1 class="h12">THE WORLD & NATURE</h1>
+                <p>
+                    "The tree which moves some to tears of joy is in the eyes of others only a green thing which stands in the way. Some see nature all ridicule and deformity, and by these I shall not regulate my propositions. And some see no nature at all. But to the eyes of the man of imagination, nature is imagination itself." William Blake
+                    "Fresh air is as good for the mind as for the body. Nature always seems trying to talk to us as if she had some great secret to tell. And so she has."
+                </p>
+            </div>
+            <div class="box3">
+                <img src="img/mountain1.jpg" alt="Mountain Image">
+                <h1>NEVER STOP<br>EXPLORING THE<br>WORLD</h1>
+                 <div class="nature">
+                    <div class="g1">
+                        <h4>NATURE</h4>
+                        <img src="img/trip11.jpg" alt="Nature Image">
+                        <p>"There is something infinitely healing in the repeated refrains of nature—the assurance that dawn comes after night, and spring after the winter."</p>
+                    </div>
+                    <div class="g2">
+                        <h4>MOUNTAIN</h4>
+                        <img src="img/trip13.jpg" alt="Mountain Image">
+                        <p></p>
+                    </div>
+                    <div class="g3">
+                        <h4>BEACH</h4>
+                        <img src="img/trip18.jpg" alt="Beach Image">
+                        <p></p>
+                    </div>
+                
+            
+            </div>
+            </div>
+            <div class="box4">
+                <img src="img/trip11.jpg" alt="Adventure Image">
+                <h1 class="h41">LET'S GO<br>SOMEWHERE</h1>
+                <h1 class="h42">AMAZING NATURAL<br>PARADISE</h1>
+            </div>
+
+            <div class="box5">
+                <img src="img/worldcity.jpg" alt="New World Image">
+                <h1>A NEW</h1>
+                <h1 class="h5b">WORLD</h1>
+                <h2 class="H5C">EXPLORE YOUR DREAM LAND</h2>
+                <p>
+                    If we wish to make a new world we have the material ready. The first one, too, was made out of chaos.
+                    I want to encounter roles that break the shell and invite me into a new world.
+                </p>
+            </div>
+
+        </section>
+    </div>
+      <!-- end of the slider section -->
+      <!-- start the tour section -->
+      <div class="h11">
+        <h1>MOST POPULAR PLACE IN INDIA</h1>
+    </div>
+    <!-- end of headding contant  -->
+    
+    <!-- START OF THE INDIAN GALLERY -->
+    <section class="indian">
+        <div class="imgs1">
+            <img src="img/kanpur.jpg">
+            <h3>Kanpur</h3>
+            <p>Kanpur, formerly Cawnpore is a large industrial city located in the central-western part of the state of Uttar Pradesh, India.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="imgs2">
+            <img src="img/locknow2.jpg"> 
+            <h3>Lucknow</h3>
+            <p>Lucknow is the capital and the largest city of the Indian state of Uttar Pradesh and it is also the second largest urban agglomeration </p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="imgs3">
+            <img src="img/tajmahal.jpg">
+            <h3>Agra</h3>
+            <p>Agra is a city on the banks of the Yamuna river in the Indian state of Uttar Pradesh, south-east of the national capital Delhi ..</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="imgs5">
+            <img src="img/dehli.jpg">
+            <h3>Dehli</h3>
+            <p> Delhi is beautiful. Delhi is irresistible. And Delhi is memorable. Many things have been said about our capital – our Delhi. These inspiring </p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="imgs6">
+            <img src="img/mumbai1.jpg">
+            <h3>Mumbai</h3>
+            <p>Mumbai India, is famous for its chaotic streets. For bargains and people-watching, outdoor bazaars top the list of attractions.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="imgs7">
+            <img src="img/banglore.jpg">
+            <h3>Benglore</h3>
+            <p> Bangalore have loads of tourist attraction, historical monuments, park and wildlife area, amusement park, shopping mall</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+       
+    </section>
+    <!-- END OF THE INDIA PLACE GALLERY -->
+    <br><br>
+    <!-- HEADDING OF WORLD TOUR -->
+        <div class="headingtour">
+            <h1>MOST POPULAR PLACE IN WORLD</h1>
+        </div>
+    <!-- END OF THE HEADDING -->
+    <!--START OF THE WORLD PLACE GALLARY  -->
+        <section class="tours">
+            <div class="tour1">
+                <img src="img/pairs1.jpg">
+                <h3>Pairs</h3>
+                <p>Tours is a French one-day classic road cycling race held every October from the outskirts of Paris to the cathedral city of Tours.</p>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+            <div class="tour2">
+                <img src="img/newyork.jpg">
+                <h3>New York</h3>
+                <p>“Full of facts, history, humour and had the best ‘fillers’ that made our tour so much more interesting and memorable...Sheldon</p>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+            <div class="tour3">
+                <img src="img/london 1.jpg">
+                <h3>London</h3>
+                <p>Many call London the heart and soul of the UK due to its history, culture and diversity; it is the perfect location </p>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+            <div class="tour4">
+                <img src="img/chines.jpg">
+                <h3>China</h3>
+                <p>China is on the continent of Asia. It is situated on the southeastern section of Asia with an extensive shoreline on the Yellow Sea</p>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+            <div class="tour5">
+                <img src="img/canada.jpg">
+                <h3>Conada</h3>
+                <p>Canada has a large domestic and foreign tourism industry. The second largest country in the world</p>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+            <div class="tour6">
+                <img src="img/japan 1.jpg">
+                <h3>Japan</h3>
+                <p>Japan values good manners highly, but when it comes to chowing down on bowlfuls of noodles, there’s only one way to eat: noisily</p>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </section>
+      <!-- end of tour section -->
+       <!-- start grid gallary section -->
+     
+       <div class="gridg"><h1>OUR GALLERY</h1></div>
+     
+       <div class="containergrid">
+           <div class="boxg1"><h1 class="headingg">NATURE</h1></div>
+           <div class="boxg2"><h1 class="headingg">RIVER</h1></div>
+           <div class="boxg3"><h1 class="headingg">MOUNTAIN</h1></div>
+           <div class="boxg4"><h1 class="headingg">BEACH</h1></div>
+           <div class="boxg5"><h1 class="headingg">INDIA</h1></div>
+           <div class="boxg5">
+               <h1 class="headingg">DUBAI</h1>
+               <p class="p1"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis nesciunt doloremque vero explicabo maiores inventore, rem itaque eius delectus ipsum totam sit aliquid saepe expedita, laudantium odit iste fugiat fugit.</p>
+           </div>
+           <div class="boxg6">
+               <h1 class="headingg">INDIA</h1>
+               <p class="p2"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis nesciunt doloremque vero explicabo maiores inventore, rem itaque eius delectus ipsum totam sit aliquid saepe expedita, laudantium odit iste fugiat fugit.</p>
+           </div>
+           <div class="boxg7">
+               <h1 class="headingg">VIETNAM</h1>
+               <p class="p1"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis nesciunt doloremque vero explicabo maiores inventore, rem itaque eius delectus ipsum totam sit aliquid saepe expedita, laudantium odit iste fugiat fugit.</p>
+           </div>
+           
+           <div class="boxg8"><h1 class="headingg">  AMSTERDAM  </h1></div>
+           <div class="boxg9"><h1 class="headingg">RUSSIA</h1></div>
+           
+           
+       </div>
+       <!-- end of the grallary section -->
+       <!-- start of the services section -->
+       <section class="serviceh"><h1>OUR SERVICES</h1></section>
+       <section class="ourservices1">
+         <div class="ourservice1">
+            <img src="img/trip14.jpg" alt="">
+             <h1 class="headingser">
+                 Personalized Matching
+             </h1>
+             <p class="serp">
+                Our unique matching system lets you fine just the tour you want for you next holiday
+             </p>
+         </div>
+         <div class="ourservice2">
+            <img src="img/trip13.jpg" alt="">
+             <h1 class="headingser">
+                Wide Variety of Tour
+             </h1>
+             <p class="serp">
+                We offer a wide variety of personally picked tours with destinations all over the globe.
+             </p>
+         </div>
+         <div class="ourservice3">
+            <img src="img/trip36.jpg" alt="">
+             <h1 class="headingser">
+                 Hghty Qualified Service
+             </h1>
+             <p class="serp">
+                 Our tour managers are qualified, skilled, and friendly to bring you the best service
+             </p>
+         </div>
+         <div class="ourservice4">
+            <img src="img/trip16.jpg" alt="">
+             <h1 class="headingser">
+                 24/7 Support
+             </h1>
+             <p class="serp">
+                 You can always get professiona support from our stell 24/7 and ask any question you have.
+             </p>
+         </div>
+         <div class="ourservice5">
+            <img src="img/trip17.jpg" alt="">
+             <h1 class="headingser">
+                 Handpicked Hotels
+             </h1>
+             <p class="serp">
+                 Our team offers only the best selection of affordore and laxury hotals to our clients
+             </p>
+         </div>
+         <div class="ourservice6">
+            <img src="img/trip35.jpg" alt="">
+             <h1 class="headingser">
+                 Best Price Guarantee
+             </h1>
+             <p class="serp">
+                 if you tour that are cheaper than ours. we will compensate the difference
+             </p>
+         </div>
+     </section>
+       <!-- end of the services section -->
+       <!--footer start  -->
+   
+
+   
+    <footer class="footer1">
+        <div class="container1">
+        <div class="row">
+        <div class=" colunm">
+        <h5 class="heading">Content us</h5>
+         
+        <p class="mb10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        <p><i class="location"></i> noida sector 44 </p>
+        <p><i class="phone"></i>  +91-7275913284  </p>
+        <p><i class="envelope"></i> engineerbhaiya.com  </p>
+         
+        
+        </div>
+        
+        
+        <div class=" colunm">
+        <h5 class="heading">Our facilities</h5>
+        
+        <ul class="footer_list">
+        <li><a href="http://webenlance.com">Restruant</a></li>
+        <li><a href="http://webenlance.com">Bars</a></li>
+        <li><a href="http://webenlance.com">Pick-up</a></li>
+        <li><a href="http://webenlance.com">Spa</a></li>
+        <li><a href="http://webenlance.com">Swimming Pool</a></li>
+        <li><a href="http://webenlance.com">Gym</a></li>
+        </ul>
+         
+        </div>
+        
+        
+        <div class=" colunm">
+        <h5 class="heading">Interest</h5>
+        
+        <ul class="footer_list">
+        <li><a href="http://webenlance.com">Beaches</a></li>
+        <li><a href="http://webenlance.com">Family Travel</a></li>
+        <li><a href="http://webenlance.com">Budget Travel</a></li>
+        <li><a href="http://webenlance.com">Food & Drink</a></li>
+        <li><a href="http://webenlance.com">Honeymoon and romance</a></li>
+        <li><a href="http://webenlance.com">Image Cropping</a></li>
+        </ul>
+        
+        </div>
+        
+        
+        <div class=" colunm">
+        <h5 class="heading">Follow us</h5>
+        
+        
+        <ul class="footer_list1">
+        <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.enginner.com/</a></p></li>
+        <li><a href="#"><i class="fab fa-facebook fleft padding-right"></i> </a><p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.enginner.com/</a></p></li>
+        <li><a href="#"><i class="fab fa-instagram fleft padding-right"></i> </a><p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.engineer.com/</a></p></li>
+        </ul>
+        
+        </div>
+        </div>
+        </div>
+        <div class="bottom_border">
+      
+        </div>
+        
+        
+        <div class="container2">
+        <ul class="footer_bottom_list">
+        <li><a href="http://webenlance.com">Home</a></li>
+        <li><a href="http://webenlance.com">About</a></li>
+        <li><a href="http://webenlance.com">Services</a></li>
+        <li><a href="http://webenlance.com">Pricing</a></li>
+        <li><a href="http://webenlance.com">Blog</a></li>
+        <li><a href="http://webenlance.com">Contact</a></li>
+        </ul>
+        <!--foote_bottom_ul_amrc ends here-->
+        <p class="text-center">Copyright @2017 | Designed With by <a href="#">Your Company Name</a></p>
+        
+        <ul class="social_footer_ul">
+        <li><a href="http://webenlance.com"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="http://webenlance.com"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="http://webenlance.com"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="http://webenlance.com"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+        <!--social_footer_ul ends here-->
+        </div>
+      
+        
+        </footer>
+        <!-- END OF THE FOOTER SECTION -->
+
+</body>
+</html>
